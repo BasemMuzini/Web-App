@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- هذا فقط لعرض الملف بلغة مفهومة بدون رموز -->
+<meta charset="utf-8">
+
+<title>إنشاء حساب</title>
+
+</head>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif; text-align: center;
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 2px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  text-align: right;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+input[type=number], input[type=email] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 2px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  text-align: right;
+
+}
+
+input[type=number]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  width: 100%;
+}
+
+.cancelbtn {width: 200px;}
+.signupbtn {width: 200px;}
+
+/* Add padding to container elements */
+.container {
+  padding: 30px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  color: black;
+  text-align: center;
+}
+
+body
+{
+	background: #f7f7f7;
+}
+
+</style>
+<body>
+
+<section>
+  <img class="mySlides" src="LogoInterfaces.jpg"
+  style="width:100%">
+</section>
+
+<form action="Create_Account.php" method="POST" style="border:15px solid #ccc">
+
+  <div class="container" >
+    <h1>إنشاء حساب</h1>
+    <h4>يرجى ملء هذا النموذج لإنشاء حساب</h4>
+    <hr>
+
+
+    <label for="UN"><b>اسم المستخدم</b></label><br/>
+  <input type="text" placeholder="أدخل اسم المستخدم" name="UserName" required><br/>
+	
+	<br/><br>
+	
+	<label for="JN"><b>الرقم الوظيفي أو الجامعي</b></label><br/>
+    <input type="number" placeholder="أدخل الرقم الوظيفي أو الجامعي" name="JobNumber" required><br/>
+	
+	<br/><br>
+
+	<label for="PN"><b>رقم الجوال</b></label><br/>
+    <input type="number" placeholder="أدخل رقم الجوال" name="PhoneNumber" required><br/>
+	
+	<br/><br>
+
+    <label for="e"><b>البريد الإلكتروني</b></label><br/>
+    <input type="email" placeholder="أدخل البريد الإلكتروني" name="Email" required><br/>
+
+    <br/><br>
+
+    <label for="psw"><b>كلمة المرور</b></label><br/>
+    <input type="password" placeholder="أدخل كلمة المرور" name="Password" required><br/>
+
+	<br/><br>
+
+    <!--<label for="psw-repeat"><b>تأكيد كلمة المرور</b></label><br/>
+    <input type="password" placeholder="أعد إدخال كلمة المرور" name="PasswordRepeat" required><br/>-->
+
+	<br/><br>
+        
+    <p>بإنشاء الحساب ، فإنك توافق على  <a href="#" style="color:dodgerblue">الشروط والخصوصية</a></p>
+
+    <div class="clearfix">
+	  <button type="submit" class="signupbtn">إنشاء الحساب</button>
+	</div>
+  
+  <br><br>
+  
+  </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>تسجيل الدخول</title>
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+border: 17px solid #f1f1f1; text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  text-align: right;
+
+}
+  
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+
+
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+	 
+  }
+  .cancelbtn {
+     width: 100%;
+	 
+  }
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+body
+{
+	background: #f7f7f7;
+}
+
+</style>
+<body>
+
+<section>
+  <img class="mySlides" src="LogoInterfaces.jpg"
+  style="width:100%">
+</section>
+
+<h3>تسجيل الدخول</h3>
+
+<form action="/action_page.php" style="border:4px solid #ccc" method="post">
+
+ <div class="container" >
+ 
+    <label for="uname"><b>اسم المستخدم</b></label>	<br/>
+    <input type="text" placeholder="أدخل اسم المستخدم" name="UserName" required>	<br/>
+
+    <label for="psw"><b>كلمة المرور</b></label>	<br/>
+    <input type="password" placeholder="أدخل كلمة المرور" name="password" required>
+        
+    <button type="submit">تسجيل الدخول</button>
+    
+	<label>
+      	<br/><br/>
+		تذكرني <input type="checkbox" name="remember">
+	</label>
+
+
+	<!-- هنا قمت بوضع رابط ينقل المستخدم إلى صفحة إعادة تعيين كلمة المرور -->
+	<span class="psw"><a href="Forgot_Password.html">نسيت كلمة المرور؟</a></span>
+	
+	<br/>
+	<br/>
+	
+	<!-- هنا قمت بوضع رابط ينقل المستخدم الجديد إلى صفحة إنشاء الحساب -->
+	<span class="psw"><a href="Create_Account.html">مستخدم جديد؟</a></span>
+	
+	<br/>
+	<br/>
+   
+ </div>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>إضافة قاعة  </title>
+
+</head>
+<style>
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  float: center;
+}
+
+body
+{
+	background: #f7f7f7;
+	float:center;
+}
+
+</style>
+<body>
+<center>
+<h3>إضافة قاعة على النظام</h3><br/>
+
+<div>
+  <form action="Classroom_Add.php" method="POST">
+
+    <label for="BN">اختيار رقم المبنى</label><br><br>
+    <select name="BuildingNumber">
+      <option selected hidden value="">اختر رقم المبنى</option>
+      <option value="105">105</option>
+    </select>
+	
+	<br><br>
+	
+	<label for="CNandS">كتابة اسم ورمز القاعة</label><br>
+    <input type="text" id="CNandS" name="ClassroomNameAndSymbol" placeholder="اكتب اسم ورمز القاعة">
+  
+  <br><br>
+  
+  <label for="CC">كتابة حجم السعة الاستيعابية للقاعة</label><br>
+    <input type="text" id="CC" name="ClassroomCapacity" placeholder="اكتب حجم السعة الاستيعابية للقاعة">
+  
+  <br><br>
+  
+    <input type="submit" value="إضافة القاعة">
+	
+  </form>
+</div>
+</center>
+</body>
+</html>
